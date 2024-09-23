@@ -45,10 +45,10 @@ $this->title = $slug;
                                 <b class="fw-semibold">Title or Header text in here</b>
                                 <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                             </div>
-                            <div class="card-footer bg-white border-top-0 pt-0 pb-3 ps-0">
+                            <!-- <div class="card-footer bg-white border-top-0 pt-0 pb-3 ps-0">
                                 <span class="xsmall bg-secondary bg-opacity-50 py-1 px-2 text-light rounded-1 d-inline">Education</span>
                                 <span class="xsmall bg-secondary bg-opacity-50 py-1 px-2 text-light rounded-1 d-inline">Social</span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 <?php } ?>
