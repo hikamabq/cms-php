@@ -32,7 +32,7 @@ AdminAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php 
     $this->registerCsrfMetaTags(); 
-    $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::getAlias('@web/mapadi.png')]);
+    $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::getAlias('@web/favicon.ico')]);
     ?>
     <title>MAPADI | Jawa Tengah</title>
     <?php $this->head() ?>
