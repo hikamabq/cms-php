@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\models\posts;
 
+use app\modules\admin\models\pages\Pages;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\modules\admin\models\posts\Posts;
@@ -17,7 +18,7 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'id_pages', 'thumbnail_hidden', 'status'], 'integer'],
+            [['id', 'id_pages', 'status'], 'integer'],
             [['thumbnail', 'title', 'slug', 'description', 'tag', 'author', 'created_at', 'updated_at'], 'safe'],
         ];
     }
@@ -38,7 +39,7 @@ class PostsSearch extends Posts
      *
      * @return ActiveDataProvider
      */
-    public function search($params, $pages)
+    public function search($params)
     {
         $query = Posts::find();
 
@@ -60,9 +61,7 @@ class PostsSearch extends Posts
         $query->andFilterWhere([
             'id' => $this->id,
             'id_pages' => $this->id_pages,
-            'thumbnail_hidden' => $this->thumbnail_hidden,
             'status' => $this->status,
-            'slug' => $pages,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -77,6 +76,7 @@ class PostsSearch extends Posts
     }
     public function searchPosts($params, $slug)
     {
+        $pages = Pages::findOne(['slug' => $slug]);
         $query = Posts::find();
 
         // add conditions that should always apply here
@@ -96,10 +96,8 @@ class PostsSearch extends Posts
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'id_pages' => $this->id_pages,
-            'thumbnail_hidden' => $this->thumbnail_hidden,
+            'id_pages' => $pages->id,
             'status' => $this->status,
-            'slug' => $slug,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);

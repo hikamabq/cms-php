@@ -64,6 +64,7 @@ $config = [
                 'admin' => '/admin',
                 'detail/<slug>' => 'site/detail',
                 '<slug>' => 'site/posts',
+                'admin/posts/pages/<pages>/update?id=<id>' => 'admin/posts/update',
                 'admin/posts/pages/<pages>' => 'admin/posts/index',
             ],
         ],

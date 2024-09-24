@@ -75,6 +75,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
                     </li>
                     <?php } ?>
                 </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark text-light rounded d-inline-block px-3" href="<?= Url::to('/login'); ?>">Masuk</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

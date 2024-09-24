@@ -64,7 +64,7 @@ use yii\widgets\ActiveForm;
 
 
     <div class="form-group mt-3">
-        <?= Html::a('Cancel', ['posts/pages/'.$_GET['pages'].''], ['class' => 'btn btn-sm btn-light py-2 px-4']) ?>
+        <?= Html::a('Cancel', ['posts/pages/'.$_SESSION['pages'].''], ['class' => 'btn btn-sm btn-light py-2 px-4']) ?>
         <?= Html::submitButton('Submit', ['class' => 'btn btn-sm btn-dark py-2 px-4']) ?>
     </div>
     

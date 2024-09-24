@@ -8,6 +8,7 @@ use app\modules\admin\models\posts\PostsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * PostsController implements the CRUD actions for Posts model.
@@ -42,26 +43,33 @@ class PostsController extends Controller
         $_SESSION['pages'] = $pages;
         if($pages == null){
             $pages = 'home';
+        }else{
+            $pages = $_SESSION['pages'];
         }
         $searchModel = new PostsSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams, $pages);
+        $dataProvider = $searchModel->searchPosts($this->request->queryParams, $pages);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
-    // public function actionPages($slug)
-    // {
-    //     // $_SESSION['pages'] = $slug;
-    //     $searchModel = new PostsSearch();
-    //     $dataProvider = $searchModel->searchPosts($this->request->queryParams, $slug);
+    public function actionPages($pages)
+    {
+        $_SESSION['pages'] = $pages;
+        if($pages == null){
+            $pages = 'home';
+        }else{
+            $pages = $_SESSION['pages'];
+        }
+        $searchModel = new PostsSearch();
+        $dataProvider = $searchModel->searchPosts($this->request->queryParams, $pages);
 
-    //     return $this->render('index', [
-    //         'searchModel' => $searchModel,
-    //         'dataProvider' => $dataProvider,
-    //     ]);
-    // }
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
 
     /**
      * Displays a single Posts model.
@@ -90,9 +98,15 @@ class PostsController extends Controller
         $model->id_pages = $page->id;
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
+            if ($model->load($this->request->post()) ) {
+                $upload = UploadedFile::getInstance($model, 'thumbnail');
+                $name_file = rand();
+                if (!empty($upload)) {
+                    $upload->saveAs('uploads/' . $name_file . '.' . $upload->extension);
+                    $model->thumbnail = $name_file . '.' . $upload->extension;
+                }
+                $model->save();
                 return $this->redirect(['posts/pages/'.$pages]);
-                // return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
             $model->loadDefaultValues();
@@ -110,16 +124,25 @@ class PostsController extends Controller
      * @return string|\yii\web\Response
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($pages, $id)
+    public function actionUpdate($p, $slug)
     {
-        $_SESSION['pages'] = $pages;
-        $model = $this->findModel($id);
+        $_SESSION['pages'] = $p;
+        $model = Posts::findOne(['slug' => $slug]);
+        $gambar_lama = $model->thumbnail;
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            // return $this->redirect(['view', 'id' => $model->id]);
-            return $this->redirect(['posts/pages/'.$pages]);
+        if ($this->request->isPost && $model->load($this->request->post()) ) {
+            if ($model->thumbnail == null) {
+                $model->thumbnail = $gambar_lama;
+            }
+            $upload = UploadedFile::getInstance($model, 'thumbnail');
+            $name_file = rand();
+            if (!empty($upload)) {
+                $upload->saveAs('uploads/' . $name_file . '.' . $upload->extension);
+                $model->thumbnail = $name_file . '.' . $upload->extension;
+            }
+            $model->save();
+            return $this->redirect(['posts/pages/'.$p]);
         }
-
         return $this->render('update', [
             'model' => $model,
         ]);

@@ -45,19 +45,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'yii\grid\SerialColumn'
             ],
             // 'id_pages',
-            'thumbnail',
+            // 'thumbnail',
             'title',
             //'slug',
             //'description:ntext',
             // 'tag',
             'author',
-            'status',
-            //'created_at',
+            [
+                'attribute' => 'status',
+                'format' => 'raw',
+                'value' => function($model){
+                    return Helpers::status($model->status);
+                }
+            ],
+            'created_at:date',
             //'updated_at',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Posts $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
+                'urlCreator' => function ($action, Posts $model, $key, $index, $column) use ($pages) {
+                    return Url::toRoute([$action, 'p' => $pages, 'slug' => $model->slug]);
                  }
             ],
         ],

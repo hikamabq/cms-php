@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 use app\modules\admin\models\pages\Pages;
+use app\modules\admin\models\posts\Posts;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
 
@@ -42,12 +43,16 @@ $this->title = 'Beranda';
             <div class="col-md-12">
                 <h3><?= $dataPages['name'] ?></h3>
             </div>
-            <?php for ($i=0; $i < 4; $i++) {  ?>
+            <?php 
+            $posts = Posts::find()->where(['id_pages' => $dataPages['id']])->all();
+            foreach($posts as $data){  ?>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card border-0 h-100">
-                    <div class="card-header border-bottom-0 bg-light rounded">
+                    <div class="card-header border-bottom-0 bg-light rounded p-0">
                         <a href="<?= Url::to('/detail/slug') ?>">
-                            <div class="w-100" style="height: 150px;"></div>
+                            <div class="w-100 overflow-hidden" style="height: 150px;">
+                                <img src="<?= Url::to('@web/uploads/'.$data['thumbnail'] .'') ?>" alt="" class="img-fluid">
+                            </div>
                         </a>
                     </div>
                     <div class="card-body ps-0 pb-0">
@@ -58,11 +63,9 @@ $this->title = 'Beranda';
                             14 Sept 2024
                         </span>
                         <a href="<?= Url::to('/detail/slug') ?>" class="text-decoration-none">
-                            <b class="fw-semibold text-dark">Title or Header text in here</b>
+                            <b class="fw-semibold text-dark"><?= $data['title'] ?></b>
                             <p class="small text-secondary">
-                                <?php for ($s=0; $s <= $i; $s++) { 
-                                    echo "Lorem ipsum dolor sit amet consectetur adipisicing elit ";
-                                } ?>
+                                <?= substr($data['title'], 0, 100) ?>...
                             </p>
                         </a>
                     </div>

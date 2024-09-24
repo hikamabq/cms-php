@@ -81,13 +81,16 @@ class SiteController extends Controller
     public function actionPosts($slug)
     {
         $cek = Pages::findOne(['slug' => $slug]);
+        $posts = Posts::find()->where(['id_pages' => $cek->id])->all();
         if(!empty($cek) || $cek |= null){
             if($cek->type == 0){
                 return $this->render('posts', [
+                    'posts' => $posts,
                     'slug' => $slug
                 ]);
             }else{
                 return $this->render('single', [
+                    'posts' => $posts,
                     'slug' => $slug
                 ]);
             }

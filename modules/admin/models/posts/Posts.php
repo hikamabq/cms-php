@@ -4,6 +4,7 @@ namespace app\modules\admin\models\posts;
 
 use app\modules\admin\models\pages\Pages;
 use Yii;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "posts".
@@ -11,7 +12,6 @@ use Yii;
  * @property int $id
  * @property int $id_pages
  * @property string|null $thumbnail
- * @property int $thumbnail_hidden
  * @property string $title
  * @property string $slug
  * @property string $description
@@ -32,6 +32,16 @@ class Posts extends \yii\db\ActiveRecord
     {
         return 'posts';
     }
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => SluggableBehavior::className(),
+                'attribute' => 'title',
+                'ensureUnique' => true,
+            ],
+        ];
+    }
 
     /**
      * {@inheritdoc}
@@ -40,12 +50,11 @@ class Posts extends \yii\db\ActiveRecord
     {
         return [
             [['id_pages', 'title', 'slug', 'description', 'author', 'status'], 'required'],
-            [['id', 'id_pages', 'thumbnail_hidden', 'status'], 'integer'],
+            [['id_pages', 'status'], 'integer'],
             [['description'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['thumbnail', 'title', 'slug', 'tag', 'author'], 'string', 'max' => 255],
             [['id'], 'unique'],
-            [['id_pages'], 'exist', 'skipOnError' => true, 'targetClass' => Pages::class, 'targetAttribute' => ['id_pages' => 'id']],
         ];
     }
 
@@ -58,7 +67,6 @@ class Posts extends \yii\db\ActiveRecord
             'id' => 'ID',
             'id_pages' => 'Id Pages',
             'thumbnail' => 'Thumbnail',
-            'thumbnail_hidden' => 'Thumbnail Hidden',
             'title' => 'Title',
             'slug' => 'Slug',
             'description' => 'Description',
