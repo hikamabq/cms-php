@@ -52,34 +52,34 @@ AdminAsset::register($this);
         </div>
         <div class="sidebar-main">
             <div class="sidebar-menu pt-3">
-                <a href="<?= Url::to('/admin') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'default' ? 'bg-dark text-light' : 'text-secondary') ?> ">
+                <a href="<?= Url::to('/admin') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'default' ? 'bg-light text-dark' : 'text-secondary') ?> ">
                     <span>
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
                     </span>
                     <span class="ps-2">Dashboard</span>
                 </a>
                 <?php foreach($pages as $data){ ?>
-                <a href="<?= Url::to('/admin/posts/pages/'.$data['slug'].'') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= ($_SESSION['pages'] == $data['slug'] ? 'bg-dark text-light' : 'text-secondary') ?>">
+                <a href="<?= Url::to('/admin/posts/pages/'.$data['slug'].'') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= ($_SESSION['pages'] == $data['slug'] ? 'bg-light text-dark' : 'text-secondary') ?>">
                     <span>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-app-window"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
                     </span>
                     <span class="ps-2"><?= $data['name'] ?></span>
                 </a>
                 <?php } ?>
                 <div class="d-block border-bottom mt-3 mb-2"></div>
-                <a href="<?= Url::to('/admin/pages') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'pages' ? 'bg-dark text-light' : 'text-secondary') ?>">
+                <a href="<?= Url::to('/admin/pages') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'pages' ? 'bg-light text-dark' : 'text-secondary') ?>">
                     <span>
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sitemap"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M15 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" /><path d="M12 9l0 3" /></svg>
                     </span>
                     <span class="ps-2">Pages</span>
                 </a>
-                <a href="<?= Url::to('/admin/profile') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'profile' ? 'bg-dark text-light' : 'text-secondary') ?>">
+                <a href="<?= Url::to('/admin/profile') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'profile' ? 'bg-light text-dark' : 'text-secondary') ?>">
                     <span>
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
                     </span>
                     <span class="ps-2">Settings</span>
                 </a>
-                <a href="<?= Url::to('/admin/seo') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'seo' ? 'bg-dark text-light' : 'text-secondary') ?>">
+                <a href="<?= Url::to('/admin/seo') ?>" class="list-menu d-block p-2 rounded d-flex align-items-center <?= (Yii::$app->controller->id == 'seo' ? 'bg-light text-dark' : 'text-secondary') ?>">
                     <span>
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
                     </span>

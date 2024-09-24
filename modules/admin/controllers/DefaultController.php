@@ -4,6 +4,7 @@ namespace app\modules\admin\controllers;
 
 use app\modules\admin\models\category\Category;
 use app\modules\admin\models\kota\Kota;
+use app\modules\admin\models\pages\Pages;
 use app\modules\admin\models\posts\Posts;
 use yii\web\Controller;
 
@@ -19,6 +20,11 @@ class DefaultController extends Controller
     public function actionIndex()
     {
         $_SESSION['pages'] = 'default';
-        return $this->render('index');
+        $pages = Pages::find()->count();
+        $posts = Posts::find()->count();
+        return $this->render('index', [
+            'pages' => $pages,
+            'posts' => $posts,
+        ]);
     }
 }

@@ -95,6 +95,7 @@ $this->title = 'Beranda';
                     <p class="text-dark text-opacity-50">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos? Ullam maiores sed provident minus sunt voluptate, recusandae eius fuga ipsam ipsa unde id totam sint! Quae deleniti quidem officia.
                     </p>
+                    <span class="text-muted small">Hikam Abqory</span>
                 </div>
             </div>
         </div>
