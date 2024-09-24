@@ -62,7 +62,7 @@ $config = [
                 'posts' => '/site/posts',
                 'login' => '/site/login',
                 'admin' => '/admin',
-                'detail/<detail>' => 'site/detail',
+                'detail/<slug>' => 'site/detail',
                 '<slug>' => 'site/posts',
                 'admin/posts/pages/<pages>' => 'admin/posts/index',
             ],

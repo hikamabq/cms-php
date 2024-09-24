@@ -55,7 +55,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
 </head>
 <body class="">
 <?php $this->beginBody() ?>
-    <nav class="navbar navbar-expand-lg bg-white mb-3">
+    <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#e11d48"  class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.088 4.82a10 10 0 0 1 9.412 .314a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -8 0a1 1 0 0 1 -1 0a8 8 0 0 0 -7.733 -.148l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -.068v-13a1 1 0 0 1 .5 -.866a10 10 0 0 1 9.412 -.314l.088 .044l.088 -.044z" /></svg>
@@ -71,12 +71,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
                     </li>
                     <?php foreach($pages as $data){ ?>
                     <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="<?= Url::to(''.$data['slug'].''); ?>"><?= $data['slug'] ?></a>
+                        <a class="nav-link text-capitalize" href="<?= Url::to('/'.$data['slug'].''); ?>"><?= $data['name'] ?></a>
                     </li>
                     <?php } ?>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= Url::to('/'); ?>">Profil</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -99,19 +96,19 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
+                    <b class="d-block">Menu</b>
+                    <a href="" class="d-block text-decoration-none small text-secondary">Beranda</a>
+                    <?php foreach($pages as $data){ ?>
+                        <a href="<?= Url::to(''.$data['slug'].''); ?>" class="d-block text-decoration-none small text-secondary"><?= $data['name']; ?></a>
+                    <?php } ?>
+                    <a href="" class="d-block text-decoration-none small text-secondary">Kebijakan Privasi</a>
+                </div>
+                <div class="col-md-3 mb-3">
                     <b class="d-block">Social Media</b>
                     <a href="" class="d-block text-decoration-none small text-secondary">Facebook</a>
                     <a href="" class="d-block text-decoration-none small text-secondary">Instagram</a>
                     <a href="" class="d-block text-decoration-none small text-secondary">Youtube</a>
                     <a href="" class="d-block text-decoration-none small text-secondary">LinkedIn</a>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <b class="d-block">Menu</b>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Beranda</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Artikel</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Berita</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Profil</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Kebijakan Privasi</a>
                 </div>
             </div>
         </div>

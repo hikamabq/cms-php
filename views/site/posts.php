@@ -33,7 +33,9 @@ $this->title = $slug;
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="card border-0 h-100">
                             <div class="card-header border-bottom-0 bg-light rounded">
-                                <div class="w-100" style="height: 150px;"></div>
+                                <a href="<?= Url::to('/detail/slug') ?>">
+                                    <div class="w-100" style="height: 150px;"></div>
+                                </a>
                             </div>
                             <div class="card-body ps-0 pb-0">
                                 <span class="d-block xsmall text-secondary mb-2">
@@ -42,19 +44,20 @@ $this->title = $slug;
                                     </span>
                                     14 Sept 2024
                                 </span>
-                                <b class="fw-semibold">Title or Header text in here</b>
-                                <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                                <a href="<?= Url::to('/detail/slug') ?>" class="text-decoration-none">
+                                    <b class="fw-semibold text-dark">Title or Header text in here</b>
+                                    <p class="small text-secondary">
+                                        <?php for ($s=0; $s <= $i; $s++) { 
+                                            echo "Lorem ipsum dolor sit amet consectetur adipisicing elit ";
+                                        } ?>
+                                    </p>
+                                </a>
                             </div>
-                            <!-- <div class="card-footer bg-white border-top-0 pt-0 pb-3 ps-0">
-                                <span class="xsmall bg-secondary bg-opacity-50 py-1 px-2 text-light rounded-1 d-inline">Education</span>
-                                <span class="xsmall bg-secondary bg-opacity-50 py-1 px-2 text-light rounded-1 d-inline">Social</span>
-                            </div> -->
                         </div>
                     </div>
                 <?php } ?>
                 </div>
             </div>
-            <!-- <div class="col-md-3 bg-light"></div> -->
         </div>
     </div>
 </div>

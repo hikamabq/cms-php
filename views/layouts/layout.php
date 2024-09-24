@@ -34,7 +34,7 @@ AdminAsset::register($this);
     $this->registerCsrfMetaTags(); 
     $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::getAlias('@web/favicon.ico')]);
     ?>
-    <title>MAPADI | Jawa Tengah</title>
+    <title>CMS </title>
     <?php $this->head() ?>
 </head>
 

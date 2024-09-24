@@ -15,6 +15,7 @@ use app\modules\admin\models\category\Category;
 use app\modules\admin\models\desa\Desa;
 use app\modules\admin\models\kecamatan\Kecamatan;
 use app\modules\admin\models\kota\Kota;
+use app\modules\admin\models\pages\Pages;
 use app\modules\admin\models\posts\Posts;
 use app\modules\admin\models\relawan\Relawan;
 use app\modules\admin\models\slide\Slide;
@@ -79,7 +80,23 @@ class SiteController extends Controller
     }
     public function actionPosts($slug)
     {
-        return $this->render('posts', [
+        $cek = Pages::findOne(['slug' => $slug]);
+        if(!empty($cek) || $cek |= null){
+            if($cek->type == 0){
+                return $this->render('posts', [
+                    'slug' => $slug
+                ]);
+            }else{
+                return $this->render('single', [
+                    'slug' => $slug
+                ]);
+            }
+        }else{
+            return $this->redirect('/');
+        }
+    }
+    public function actionDetail($slug){
+        return $this->render('detail', [
             'slug' => $slug
         ]);
     }

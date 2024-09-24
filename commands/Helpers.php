@@ -87,7 +87,7 @@ class Helpers{
         if($model == 0){
             return '<span class="bg-success bg-opacity-10 text-success rounded py-1 px-3">Post</span>';
         }else{
-            return '<span class="bg-info bg-opacity-10 text-success rounded py-1 px-3">Detail</span>';
+            return '<span class="bg-warning bg-opacity-10 text-warning rounded py-1 px-3">Single</span>';
         }
     }
     public static function filterType(){
@@ -98,7 +98,7 @@ class Helpers{
             ],
             [
                 'id' => 1,
-                'name' => 'Detail'
+                'name' => 'Single'
             ]
         ];
         $result = ArrayHelper::map($data, 'id', 'name');

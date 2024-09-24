@@ -9,10 +9,21 @@ $this->title = $slug;
 ?>
 <?php Pjax::begin(); ?>
 <div class="container">
+    <div class="section-title mb-3">
+        <div class="bg-white py-3">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3">
+                    <h1 class="text-capitalize"><?= $slug ?></h1>
+                </div>
+            </div>
+        </div>
+    </div>  
     <div class="section-posts mb-3">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
+                <?php for ($i=0; $i < 1; $i++) {  ?>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-8 mb-4">
                         <div class="card border-0 h-100">
                             <div class="card-header bg-white pb-0 border-bottom-0">
@@ -36,6 +47,8 @@ $this->title = $slug;
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2"></div>
+                <?php } ?>
                 </div>
             </div>
         </div>
