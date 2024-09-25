@@ -46,11 +46,8 @@ $this->title = $slug;
                                     </span>
                                     14 Sept 2024
                                 </span>
-                                <a href="<?= Url::to('/detail/slug') ?>" class="text-decoration-none">
-                                    <b class="fw-semibold text-dark"><?= $data['title'] ?></b>
-                                    <p class="small text-secondary">
-                                        <?= substr($data['title'], 0, 100) ?>...
-                                    </p>
+                                <a href="<?= Url::to('/detail/slug') ?>" class="text-decoration-none text-secondary">
+                                    <b class="fw-semibold small text-dark"><?= $data['title'] ?></b>
                                 </a>
                             </div>
                         </div>

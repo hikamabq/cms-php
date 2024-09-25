@@ -77,10 +77,10 @@ class PostsController extends Controller
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
+    public function actionView($slug)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => Posts::findOne(['slug' => $slug]),
         ]);
     }
 

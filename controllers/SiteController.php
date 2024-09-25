@@ -17,6 +17,7 @@ use app\modules\admin\models\kecamatan\Kecamatan;
 use app\modules\admin\models\kota\Kota;
 use app\modules\admin\models\pages\Pages;
 use app\modules\admin\models\posts\Posts;
+use app\modules\admin\models\posts\PostsSearch;
 use app\modules\admin\models\relawan\Relawan;
 use app\modules\admin\models\slide\Slide;
 use app\modules\admin\models\users\Users;
@@ -81,16 +82,17 @@ class SiteController extends Controller
     public function actionPosts($slug)
     {
         $cek = Pages::findOne(['slug' => $slug]);
-        $posts = Posts::find()->where(['id_pages' => $cek->id])->all();
         if(!empty($cek) || $cek |= null){
+            $searchModel = new PostsSearch();
+            $dataProvider = $searchModel->searchPosts($this->request->queryParams, $slug);
             if($cek->type == 0){
                 return $this->render('posts', [
-                    'posts' => $posts,
+                    'posts' => $dataProvider->models,
                     'slug' => $slug
                 ]);
             }else{
                 return $this->render('single', [
-                    'posts' => $posts,
+                    'posts' => $dataProvider->models,
                     'slug' => $slug
                 ]);
             }
