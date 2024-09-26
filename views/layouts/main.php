@@ -58,8 +58,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#e11d48"  class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.088 4.82a10 10 0 0 1 9.412 .314a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -8 0a1 1 0 0 1 -1 0a8 8 0 0 0 -7.733 -.148l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -.068v-13a1 1 0 0 1 .5 -.866a10 10 0 0 1 9.412 -.314l.088 .044l.088 -.044z" /></svg>
-                <span class="fw-bold">CMS</span>
+                <img src="<?= Url::to('@web/logo.png') ?>" width="100px;" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -77,48 +76,47 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
                     <li class="nav-item">
-                        <a class="nav-link bg-dark text-light rounded d-inline-block px-3" href="<?= Url::to('/login'); ?>">Masuk</a>
+                        <a class="nav-link bg-theme text-light rounded d-inline-block px-3" href="<?= Url::to('/login'); ?>">Masuk</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <?= $content ?>
-    <footer class="bg-light py-5">
+    <footer class="bg-theme py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <h2 class="fw-bold">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="#e11d48"  class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.088 4.82a10 10 0 0 1 9.412 .314a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -8 0a1 1 0 0 1 -1 0a8 8 0 0 0 -7.733 -.148l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -.068v-13a1 1 0 0 1 .5 -.866a10 10 0 0 1 9.412 -.314l.088 .044l.088 -.044z" /></svg>    
-                        CMS
+                        <img src="<?= Url::to('@web/logo-putih.png') ?>" width="100px;" alt="">
                     </h2>
-                    <p class="small text-secondary">
+                    <p class="small text-light text-opacity-75">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quas, ab unde incidunt sapiente consequuntur eius ipsam nulla optio nam possimus iste voluptatem qui nostrum quia earum ex. Aliquam, nobis!
                     </p>
                     <div>
-                        <span class="small text-secondary d-block">Jl. Kalideres banyune banter</span>
-                        <span class="small text-secondary d-block">08563828292</span>
+                        <span class="small text-light text-opacity-75 d-block">Jl. Kalideres banyune banter</span>
+                        <span class="small text-light text-opacity-75 d-block">08563828292</span>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <b class="d-block">Menu</b>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Beranda</a>
+                    <b class="d-block text-theme-secondary">Menu</b>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">Beranda</a>
                     <?php foreach($pages as $data){ ?>
-                        <a href="<?= Url::to(''.$data['slug'].''); ?>" class="d-block text-decoration-none small text-secondary"><?= $data['name']; ?></a>
+                        <a href="<?= Url::to(''.$data['slug'].''); ?>" class="d-block text-decoration-none small text-light text-opacity-75"><?= $data['name']; ?></a>
                     <?php } ?>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Kebijakan Privasi</a>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">Kebijakan Privasi</a>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <b class="d-block">Social Media</b>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Facebook</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Instagram</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">Youtube</a>
-                    <a href="" class="d-block text-decoration-none small text-secondary">LinkedIn</a>
+                    <b class="d-block text-theme-secondary">Social Media</b>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">Facebook</a>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">Instagram</a>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">Youtube</a>
+                    <a href="" class="d-block text-decoration-none small text-light text-opacity-75">LinkedIn</a>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="copyright xsmall bg-secondary bg-opacity-10 text-secondary text-center py-3">
+    <div class="copyright xsmall bg-theme-hover bg-opacity-10 text-light text-opacity-75 text-center py-3">
         <div>
             Made with 
             <span>

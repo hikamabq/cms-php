@@ -19,12 +19,12 @@ $this->title = 'Beranda';
                 <div class="col-md-6 mb-3 d-flex align-items-center">
                     <div class="highlight">
                         <a href="" class="text-decoration-none">
-                            <h1 class="text-dark">Title or Header in here</h1>
+                            <h1 class="text-theme">Bergerak atau Tergantikan</h1>
                             <p class="small text-secondary">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus deleniti obcaecati. Deserunt nulla voluptas veritatis. Dolorum qui reiciendis odit, velit ratione rerum, porro, voluptas eveniet quam dolores atque possimus!
                             </p>
                         </a>
-                        <a href="" class="btn btn-dark px-4">Read more</a>
+                        <a href="" class="btn btn-theme text-light px-4">Read more</a>
                     </div>
                 </div>
                 <div class="col-md-6 d-none d-md-block">
