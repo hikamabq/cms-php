@@ -83879,3 +83879,329 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2024-10-24 09:00:04 [::1][15][6766fff6ec17bf0449f0300fda02471e][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $slug in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php:8
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php(8): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', '/Users/hikamabq...', 8)
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(348): require('/Users/hikamabq...')
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/hikamabq...', Array)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/Users/hikamabq...', Array, Object(app\controllers\SiteController))
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(407): yii\base\View->render('detail', Array, Object(app\controllers\SiteController))
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\base\Controller->render('detail', Array)
+#6 [internal function]: app\controllers\SiteController->actionDetail('sentra-transfor...')
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2024-10-24 09:00:04 [::1][15][6766fff6ec17bf0449f0300fda02471e][info][application] $_GET = [
+    'slug' => 'sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.562201761.1700021243'
+    '_ga_Y5DFN9DCWC' => 'GS1.1.1700021243.1.1.1700021283.0.0.0'
+    'poptin_user_id' => '0.19jl9qabhq9'
+    'poptin_user_ip' => '125.166.228.255'
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0='
+    'frontend_lang' => 'en_US'
+    'cids' => '1'
+    '__stripe_mid' => '0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b'
+    '_identity' => 'd5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '6766fff6ec17bf0449f0300fda02471e'
+    '_csrf' => 'de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 15
+    '__authKey' => null
+    '__expire' => 1729735504
+    'pages' => 'artikel'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51094'
+    'SERVER_SOFTWARE' => 'PHP 8.1.27 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PATH_INFO' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'PHP_SELF' => '/index.php/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/detail/slug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_ga=GA1.1.562201761.1700021243; _ga_Y5DFN9DCWC=GS1.1.1700021243.1.1.1700021283.0.0.0; poptin_user_id=0.19jl9qabhq9; poptin_user_ip=125.166.228.255; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0%3D; frontend_lang=en_US; cids=1; __stripe_mid=0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b; _identity=d5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=6766fff6ec17bf0449f0300fda02471e; _csrf=de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1729735204.5791
+    'REQUEST_TIME' => 1729735204
+    'argv' => []
+    'argc' => 0
+]
+2024-10-24 09:00:48 [::1][15][6766fff6ec17bf0449f0300fda02471e][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $data in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php:22
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php(22): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', '/Users/hikamabq...', 22)
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(348): require('/Users/hikamabq...')
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/hikamabq...', Array)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/Users/hikamabq...', Array, Object(app\controllers\SiteController))
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(407): yii\base\View->render('detail', Array, Object(app\controllers\SiteController))
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\base\Controller->render('detail', Array)
+#6 [internal function]: app\controllers\SiteController->actionDetail('sentra-transfor...')
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2024-10-24 09:00:48 [::1][15][6766fff6ec17bf0449f0300fda02471e][info][application] $_GET = [
+    'slug' => 'sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.562201761.1700021243'
+    '_ga_Y5DFN9DCWC' => 'GS1.1.1700021243.1.1.1700021283.0.0.0'
+    'poptin_user_id' => '0.19jl9qabhq9'
+    'poptin_user_ip' => '125.166.228.255'
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0='
+    'frontend_lang' => 'en_US'
+    'cids' => '1'
+    '__stripe_mid' => '0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b'
+    '_identity' => 'd5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '6766fff6ec17bf0449f0300fda02471e'
+    '_csrf' => 'de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 15
+    '__authKey' => null
+    '__expire' => 1729735548
+    'pages' => 'artikel'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51110'
+    'SERVER_SOFTWARE' => 'PHP 8.1.27 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PATH_INFO' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'PHP_SELF' => '/index.php/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/detail/slug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_ga=GA1.1.562201761.1700021243; _ga_Y5DFN9DCWC=GS1.1.1700021243.1.1.1700021283.0.0.0; poptin_user_id=0.19jl9qabhq9; poptin_user_ip=125.166.228.255; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0%3D; frontend_lang=en_US; cids=1; __stripe_mid=0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b; _identity=d5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=6766fff6ec17bf0449f0300fda02471e; _csrf=de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1729735248.429
+    'REQUEST_TIME' => 1729735248
+    'argv' => []
+    'argc' => 0
+]
+2024-10-24 09:00:58 [::1][15][6766fff6ec17bf0449f0300fda02471e][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $data in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php:22
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/detail.php(22): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', '/Users/hikamabq...', 22)
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(348): require('/Users/hikamabq...')
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/hikamabq...', Array)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/Users/hikamabq...', Array, Object(app\controllers\SiteController))
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(407): yii\base\View->render('detail', Array, Object(app\controllers\SiteController))
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\base\Controller->render('detail', Array)
+#6 [internal function]: app\controllers\SiteController->actionDetail('sentra-transfor...')
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2024-10-24 09:00:57 [::1][15][6766fff6ec17bf0449f0300fda02471e][info][application] $_GET = [
+    'slug' => 'sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.562201761.1700021243'
+    '_ga_Y5DFN9DCWC' => 'GS1.1.1700021243.1.1.1700021283.0.0.0'
+    'poptin_user_id' => '0.19jl9qabhq9'
+    'poptin_user_ip' => '125.166.228.255'
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0='
+    'frontend_lang' => 'en_US'
+    'cids' => '1'
+    '__stripe_mid' => '0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b'
+    '_identity' => 'd5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '6766fff6ec17bf0449f0300fda02471e'
+    '_csrf' => 'de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 15
+    '__authKey' => null
+    '__expire' => 1729735557
+    'pages' => 'artikel'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51113'
+    'SERVER_SOFTWARE' => 'PHP 8.1.27 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PATH_INFO' => '/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'PHP_SELF' => '/index.php/detail/sentra-transformasi-peradaban-transid-sukses-menggelar-acara-bootcamp1-menuju-aksi-bersama'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/detail/slug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_ga=GA1.1.562201761.1700021243; _ga_Y5DFN9DCWC=GS1.1.1700021243.1.1.1700021283.0.0.0; poptin_user_id=0.19jl9qabhq9; poptin_user_ip=125.166.228.255; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0%3D; frontend_lang=en_US; cids=1; __stripe_mid=0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b; _identity=d5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=6766fff6ec17bf0449f0300fda02471e; _csrf=de4dab275c8b363e0618b1fe6f880f77abd156654cdcecf523ae4474f901da77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223VXmsDp0qu5WzNx3LvwpeKlT4BETc3Ln%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1729735257.9551
+    'REQUEST_TIME' => 1729735257
+    'argv' => []
+    'argc' => 0
+]
+2024-10-24 09:17:13 [::1][15][f44880aae2a954a4083b98f57eed2ffa][error][TypeError] TypeError: strtotime(): Argument #2 ($baseTimestamp) must be of type ?int, string given in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/index.php:109
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/views/site/index.php(109): strtotime('D M Y', '2024-10-24 08:4...')
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(348): require('/Users/hikamabq...')
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/hikamabq...', Array)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/Users/hikamabq...', Array, Object(app\controllers\SiteController))
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(80): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2024-10-24 09:17:13 [::1][15][f44880aae2a954a4083b98f57eed2ffa][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.562201761.1700021243'
+    '_ga_Y5DFN9DCWC' => 'GS1.1.1700021243.1.1.1700021283.0.0.0'
+    'poptin_user_id' => '0.19jl9qabhq9'
+    'poptin_user_ip' => '125.166.228.255'
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0='
+    'frontend_lang' => 'en_US'
+    'cids' => '1'
+    '__stripe_mid' => '0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b'
+    '_identity' => 'd5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => 'f44880aae2a954a4083b98f57eed2ffa'
+    '_csrf' => '1f3be5be5934cb91d5b0954cc1e2333829ebf17ad3671fe63f2e1dc835ca3b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rYCzocvLEO3UJID-4NUb5YuIJxfZ9FTy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__authKey' => null
+    'pages' => 'pages'
+    '__returnUrl' => 'http://localhost:8080/admin/pages/update?id=1'
+    '__id' => 15
+    '__expire' => 1729736533
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52593'
+    'SERVER_SOFTWARE' => 'PHP 8.1.27 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/kegiatan'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_ga=GA1.1.562201761.1700021243; _ga_Y5DFN9DCWC=GS1.1.1700021243.1.1.1700021283.0.0.0; poptin_user_id=0.19jl9qabhq9; poptin_user_ip=125.166.228.255; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik9BUHZkQXNhZ0hRdHVxSGZKRHpBRUE9PSIsInZhbHVlIjoiajFibEJ4TVRUUzJFSzVGbWVJSTlSQVN5Sk10M2p1YXVwZVY0eGE2M1hLMEhNNE0vdVJEWS9Lc0Z1VE9haThQalozbWs5cWxWWFcxUUZMUkR2VWQ4eVF5TVZsdzZSOHJ0SGw5dEZYQlZNTUo1UGlNeFJzMFRBdkRmRU44VFA1azAxSXNvM1NaNmlqdmpTWUZYK2NRRUorbzBiSWZxeU53K0ZpZEpFRmROdHlUUzI5VVdDWlhUU2Y5d0lQWHZkN2s5by9UVWRZVll1SGRHalBDWmZ4VFR5UVdSYm93TTJHcHlMcU80MkZTb0wvbz0iLCJtYWMiOiJmOTU1YmZlNzllOWNhNDRkMWIyZWQ2ZjZhMTY2MDgyNDgyNWQzZDQzODEwYmM3ZWVkNzFiNTY4Nzg3ZjNhZjE1IiwidGFnIjoiIn0%3D; frontend_lang=en_US; cids=1; __stripe_mid=0fe75a11-fbd8-45ac-b4a7-a5711e43faec3eb62b; _identity=d5d8912fa711a99259900f94dd2b8006e9dc8ad2834e4e362f70543fca708926a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=f44880aae2a954a4083b98f57eed2ffa; _csrf=1f3be5be5934cb91d5b0954cc1e2333829ebf17ad3671fe63f2e1dc835ca3b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rYCzocvLEO3UJID-4NUb5YuIJxfZ9FTy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1729736233.4169
+    'REQUEST_TIME' => 1729736233
+    'argv' => []
+    'argc' => 0
+]

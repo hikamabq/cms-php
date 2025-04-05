@@ -102,7 +102,7 @@ class SiteController extends Controller
     }
     public function actionDetail($slug){
         return $this->render('detail', [
-            'slug' => $slug
+            'model' => Posts::findOne(['slug' => $slug])
         ]);
     }
 
@@ -137,7 +137,6 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
     // reset password

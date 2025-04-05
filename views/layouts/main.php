@@ -90,12 +90,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
                     <h2 class="fw-bold">
                         <img src="<?= Url::to('@web/logo-putih.png') ?>" width="100px;" alt="">
                     </h2>
-                    <p class="small text-light text-opacity-75">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quas, ab unde incidunt sapiente consequuntur eius ipsam nulla optio nam possimus iste voluptatem qui nostrum quia earum ex. Aliquam, nobis!
-                    </p>
-                    <div>
-                        <span class="small text-light text-opacity-75 d-block">Jl. Kalideres banyune banter</span>
-                        <span class="small text-light text-opacity-75 d-block">08563828292</span>
+                    <div class="mt-3">
+                        <span class="small text-light text-opacity-75 d-block">Jl. Mungur RT 02 RW 06 Karangasem, Laweyan, Surakarta</span>
+                        <span class="small text-light text-opacity-75 d-block">085866443374</span>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">

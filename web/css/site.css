@@ -210,6 +210,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .bg-theme{
     background: var(--color-theme);
 }
+.bg-theme-secondary{
+    background: var(--color-theme-secondary);
+}
 .bg-theme-hover{
     background: var(--color-theme-hover);
 }

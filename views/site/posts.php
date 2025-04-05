@@ -33,9 +33,10 @@ $this->title = $slug;
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="card border-0 h-100">
                             <div class="card-header border-bottom-0 bg-light rounded p-0">
-                                <a href="<?= Url::to('/detail/slug') ?>">
-                                    <div class="w-100 overflow-hidden" style="height: 150px;">
-                                        <img src="<?= Url::to('@web/uploads/'.$data['thumbnail'] .'') ?>" alt="" class="img-fluid">
+                                <a href="<?= Url::to('/detail/'.$data['slug'].'') ?>">
+                                    <!-- <div class="w-100 overflow-hidden" style="height: 150px; background-image:url('<?= Url::to('@web/uploads/'.$data['thumbnail'] .'') ?>'); background-size: cover;"> -->
+                                    <div class="w-100 overflow-hidden" style="height: auto;">
+                                        <img src="<?= Url::to('@web/uploads/'.$data['thumbnail'] .'') ?>" alt="" class="img-fluid rounded">
                                     </div>
                                 </a>
                             </div>
@@ -44,9 +45,9 @@ $this->title = $slug;
                                     <span>
                                         <svg  xmlns="http://www.w3.org/2000/svg"  width="14"  height="14"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alarm"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M12 10l0 3l2 0" /><path d="M7 4l-2.75 2" /><path d="M17 4l2.75 2" /></svg>
                                     </span>
-                                    14 Sept 2024
+                                    <?= date('D M Y', strtotime($data['created_at'])) ?>
                                 </span>
-                                <a href="<?= Url::to('/detail/slug') ?>" class="text-decoration-none text-secondary">
+                                <a href="<?= Url::to('/detail/'.$data['slug'].'') ?>" class="text-decoration-none text-secondary">
                                     <b class="fw-semibold small text-dark"><?= $data['title'] ?></b>
                                 </a>
                             </div>

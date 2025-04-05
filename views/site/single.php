@@ -30,7 +30,11 @@ $this->title = $slug;
                                 <h3 class="fw-semibold"><?= $data['title'] ?></h3>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="w-100 bg-light rounded mb-3" style="height: 250px;"></div>
+                                <?php if(!empty($data['thumbnail']) || $data['thumbnail'] != null){ ?>
+                                <div class="w-100 bg-light rounded mb-3">
+                                    <img src="<?= Url::to('@web/uploads/'.$data['thumbnail'] .'') ?>" alt="" class="img-fluid rounded">
+                                </div>
+                                <?php } ?>
                                 <p class="small text-secondary">
                                     <?= $data['description'] ?>
                                 </p>

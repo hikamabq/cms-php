@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}  
+
+.profile{
+    margin-top: 16px;
+    margin-left: 11px;
+}
+
+.profile-pic{
+    width: 58px;
+}
+
+.cust-name{
+    font-size: 18px;
+}
+
+.cust-profession{
+    font-size: 10px;
+}
+.items {
+    width: 90%;
+    margin: 0px auto;
+}
+.slick-prev, .slick-next {
+    display: none;
+    background: #ddd;
+    border-radius: 50%;
+}
