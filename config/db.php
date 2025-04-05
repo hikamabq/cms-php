@@ -10,7 +10,7 @@ return [
 
     // dev - online
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=153.92.15.11;dbname=rdmmtsmu_transid',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=rdmmtsmu_transid',
     'username' => 'rdmmtsmu_transid',
     'password' => 'AcsAdmin!23',
     'charset' => 'utf8',

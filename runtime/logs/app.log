@@ -84205,3 +84205,237 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2025-04-05 19:28:34 [::1][-][mhc5u86okj7hpkjkc3aimb44eq][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES) in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct('mysql:host=153....', 'rdmmtsmu_transi...', Object(SensitiveParameterValue), NULL)
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare(true)
+#6 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('posts')
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('posts', 'schema', false)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('posts')
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#13 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#14 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#15 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#16 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\db\BaseActiveRecord::findOne(Array)
+#17 [internal function]: app\controllers\SiteController->actionDetail('wujudkan-p5-seb...')
+#18 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#21 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#22 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES) in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare(true)
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('posts')
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('posts', 'schema', false)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('posts')
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#13 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#14 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\db\BaseActiveRecord::findOne(Array)
+#15 [internal function]: app\controllers\SiteController->actionDetail('wujudkan-p5-seb...')
+#16 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#19 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#20 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES)
+)
+
+2025-04-05 19:28:33 [::1][-][mhc5u86okj7hpkjkc3aimb44eq][info][application] $_GET = [
+    'slug' => 'wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ino3VXpSOE1KVGlaSnVRNW03b1hPL3c9PSIsInZhbHVlIjoiQThKd2ZmQ3FVSU5RN2t6M1VsRm00SFQyRmlOQ3FVNklxTkorNVVNNzNyeHM1MDNiL1pURTEweCsxOUFPcldqbW0wRXliQ0FWTDZEalAzS21YazJGUHNhSk1ldk9tWUdvZmlUR3daM1pieWd6b3M2NytSNzU2SlJaRGhXU1czclJFNmVqU01vRXJQdFZxam9mZXUwZ2wzWk1GSk5lSjhYdUFuUzFUWFJOR2hGMmlGczJNdkJ1clF3MG5zbGQzOFdmcGttbFRTbzhneXY3Vy8vSC8vNFpCeE1zQmtvd0tXb1FhZElETnhjeE1MQT0iLCJtYWMiOiIxNmYwNjE0YTNmNDM1OGRjYmIxYTNkNWRhNjMzNTQxMTI4ZjEwM2MwZmJjMmViOWUzYjllMmFjNWE0MGE1ZmUwIiwidGFnIjoiIn0='
+    'login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d__orchid_lock' => 'eyJpdiI6IjZBUE9sa3NTOThrbG1jeEpyM2dMREE9PSIsInZhbHVlIjoiMWcxZk5ZbmFmcGF6TGpmb0hUNkJETm16NkR2T29Qa1U5REtUUkhVVXVyRk9ZYlFyMUx2Y1dxYUtEOTQ3K0wxOSIsIm1hYyI6ImNiN2Y1MzY1MTY5MTBjZTExOThlOGRmMmNkYjMxMDY4ODBkM2YxMmE1ZDczNDVkZjk0NmU2ZjExYjZlMDY4MjEiLCJ0YWciOiIifQ=='
+    'PHPSESSID' => 'mhc5u86okj7hpkjkc3aimb44eq'
+    '_csrf' => '13626a88e59c29b815da3222351463ff967f5aec3d25183563208a22d03cfe18a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-rnE6lX9cqvdemTefCYmWpVep-1QBQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/admin'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49472'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid?_pjax=%23p0'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PATH_INFO' => '/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    'PHP_SELF' => '/index.php/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    'QUERY_STRING' => '_pjax=%23p0'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_X_CSRF_TOKEN' => '-Vlfuo-MYV8rXF3mPlWRe49QyQ5dkW-6iSVMEX2CwJi3dC3UyroNBxI_LJBaMPwv6jaKVzDGH-zsVWEgLMCR_Q=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5,pt;q=0.4'
+    'HTTP_COOKIE' => 'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ino3VXpSOE1KVGlaSnVRNW03b1hPL3c9PSIsInZhbHVlIjoiQThKd2ZmQ3FVSU5RN2t6M1VsRm00SFQyRmlOQ3FVNklxTkorNVVNNzNyeHM1MDNiL1pURTEweCsxOUFPcldqbW0wRXliQ0FWTDZEalAzS21YazJGUHNhSk1ldk9tWUdvZmlUR3daM1pieWd6b3M2NytSNzU2SlJaRGhXU1czclJFNmVqU01vRXJQdFZxam9mZXUwZ2wzWk1GSk5lSjhYdUFuUzFUWFJOR2hGMmlGczJNdkJ1clF3MG5zbGQzOFdmcGttbFRTbzhneXY3Vy8vSC8vNFpCeE1zQmtvd0tXb1FhZElETnhjeE1MQT0iLCJtYWMiOiIxNmYwNjE0YTNmNDM1OGRjYmIxYTNkNWRhNjMzNTQxMTI4ZjEwM2MwZmJjMmViOWUzYjllMmFjNWE0MGE1ZmUwIiwidGFnIjoiIn0%3D; login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d__orchid_lock=eyJpdiI6IjZBUE9sa3NTOThrbG1jeEpyM2dMREE9PSIsInZhbHVlIjoiMWcxZk5ZbmFmcGF6TGpmb0hUNkJETm16NkR2T29Qa1U5REtUUkhVVXVyRk9ZYlFyMUx2Y1dxYUtEOTQ3K0wxOSIsIm1hYyI6ImNiN2Y1MzY1MTY5MTBjZTExOThlOGRmMmNkYjMxMDY4ODBkM2YxMmE1ZDczNDVkZjk0NmU2ZjExYjZlMDY4MjEiLCJ0YWciOiIifQ%3D%3D; PHPSESSID=mhc5u86okj7hpkjkc3aimb44eq; _csrf=13626a88e59c29b815da3222351463ff967f5aec3d25183563208a22d03cfe18a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-rnE6lX9cqvdemTefCYmWpVep-1QBQe%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1743856113.7802
+    'REQUEST_TIME' => 1743856113
+]
+2025-04-05 19:28:34 [::1][-][mhc5u86okj7hpkjkc3aimb44eq][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES) in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct('mysql:host=153....', 'rdmmtsmu_transi...', Object(SensitiveParameterValue), NULL)
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare(true)
+#6 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('posts')
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('posts', 'schema', false)
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('posts')
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#13 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#14 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#15 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#16 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\db\BaseActiveRecord::findOne(Array)
+#17 [internal function]: app\controllers\SiteController->actionDetail('wujudkan-p5-seb...')
+#18 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#21 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#22 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES) in /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare(true)
+#4 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('posts')
+#8 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('posts', 'schema', false)
+#9 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('posts')
+#10 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#11 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#12 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#13 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#14 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/controllers/SiteController.php(105): yii\db\BaseActiveRecord::findOne(Array)
+#15 [internal function]: app\controllers\SiteController->actionDetail('wujudkan-p5-seb...')
+#16 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('detail', Array)
+#19 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/detail', Array)
+#20 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php(12): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'rdmmtsmu_transid'@'114.10.153.183' (using password: YES)
+)
+
+2025-04-05 19:28:34 [::1][-][mhc5u86okj7hpkjkc3aimb44eq][info][application] $_GET = [
+    'slug' => 'wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d' => 'eyJpdiI6Ino3VXpSOE1KVGlaSnVRNW03b1hPL3c9PSIsInZhbHVlIjoiQThKd2ZmQ3FVSU5RN2t6M1VsRm00SFQyRmlOQ3FVNklxTkorNVVNNzNyeHM1MDNiL1pURTEweCsxOUFPcldqbW0wRXliQ0FWTDZEalAzS21YazJGUHNhSk1ldk9tWUdvZmlUR3daM1pieWd6b3M2NytSNzU2SlJaRGhXU1czclJFNmVqU01vRXJQdFZxam9mZXUwZ2wzWk1GSk5lSjhYdUFuUzFUWFJOR2hGMmlGczJNdkJ1clF3MG5zbGQzOFdmcGttbFRTbzhneXY3Vy8vSC8vNFpCeE1zQmtvd0tXb1FhZElETnhjeE1MQT0iLCJtYWMiOiIxNmYwNjE0YTNmNDM1OGRjYmIxYTNkNWRhNjMzNTQxMTI4ZjEwM2MwZmJjMmViOWUzYjllMmFjNWE0MGE1ZmUwIiwidGFnIjoiIn0='
+    'login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d__orchid_lock' => 'eyJpdiI6IjZBUE9sa3NTOThrbG1jeEpyM2dMREE9PSIsInZhbHVlIjoiMWcxZk5ZbmFmcGF6TGpmb0hUNkJETm16NkR2T29Qa1U5REtUUkhVVXVyRk9ZYlFyMUx2Y1dxYUtEOTQ3K0wxOSIsIm1hYyI6ImNiN2Y1MzY1MTY5MTBjZTExOThlOGRmMmNkYjMxMDY4ODBkM2YxMmE1ZDczNDVkZjk0NmU2ZjExYjZlMDY4MjEiLCJ0YWciOiIifQ=='
+    'PHPSESSID' => 'mhc5u86okj7hpkjkc3aimb44eq'
+    '_csrf' => '13626a88e59c29b815da3222351463ff967f5aec3d25183563208a22d03cfe18a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-rnE6lX9cqvdemTefCYmWpVep-1QBQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/admin'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49474'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/hikamabqory/Documents/Projects/belajar/cms/cms-php/web/index.php'
+    'PATH_INFO' => '/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    'PHP_SELF' => '/index.php/detail/wujudkan-p5-sebagai-bentuk-pengabdian-kepada-masyarakat-sma-muhammadiyah-menggandeng-transid'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6,en;q=0.5,pt;q=0.4'
+    'HTTP_COOKIE' => 'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ino3VXpSOE1KVGlaSnVRNW03b1hPL3c9PSIsInZhbHVlIjoiQThKd2ZmQ3FVSU5RN2t6M1VsRm00SFQyRmlOQ3FVNklxTkorNVVNNzNyeHM1MDNiL1pURTEweCsxOUFPcldqbW0wRXliQ0FWTDZEalAzS21YazJGUHNhSk1ldk9tWUdvZmlUR3daM1pieWd6b3M2NytSNzU2SlJaRGhXU1czclJFNmVqU01vRXJQdFZxam9mZXUwZ2wzWk1GSk5lSjhYdUFuUzFUWFJOR2hGMmlGczJNdkJ1clF3MG5zbGQzOFdmcGttbFRTbzhneXY3Vy8vSC8vNFpCeE1zQmtvd0tXb1FhZElETnhjeE1MQT0iLCJtYWMiOiIxNmYwNjE0YTNmNDM1OGRjYmIxYTNkNWRhNjMzNTQxMTI4ZjEwM2MwZmJjMmViOWUzYjllMmFjNWE0MGE1ZmUwIiwidGFnIjoiIn0%3D; login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d__orchid_lock=eyJpdiI6IjZBUE9sa3NTOThrbG1jeEpyM2dMREE9PSIsInZhbHVlIjoiMWcxZk5ZbmFmcGF6TGpmb0hUNkJETm16NkR2T29Qa1U5REtUUkhVVXVyRk9ZYlFyMUx2Y1dxYUtEOTQ3K0wxOSIsIm1hYyI6ImNiN2Y1MzY1MTY5MTBjZTExOThlOGRmMmNkYjMxMDY4ODBkM2YxMmE1ZDczNDVkZjk0NmU2ZjExYjZlMDY4MjEiLCJ0YWciOiIifQ%3D%3D; PHPSESSID=mhc5u86okj7hpkjkc3aimb44eq; _csrf=13626a88e59c29b815da3222351463ff967f5aec3d25183563208a22d03cfe18a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-rnE6lX9cqvdemTefCYmWpVep-1QBQe%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1743856114.2129
+    'REQUEST_TIME' => 1743856114
+]
